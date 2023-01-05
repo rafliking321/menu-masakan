@@ -1,0 +1,138 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My CSS */
+body {
+  background-color: #529ffa;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+
+}
+
+img {
+  width: 100%;
+}
+
+.panel {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 20px;
+  max-width: 960px;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 30px;
+}
+
+.pricing-features {
+  margin: 50px 0 25px;
+  color: #015ff9;
+}
+
+.pricing-features-item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0px;
+  border-top: 1px solid #e1f1ff;
+}
+
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #e1f1ff;
+}
+
+.pesan{
+  color: #015ff9;
+  font-size: 20px;
+  font-weight: 700;
+  display: block;
+}
+
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color:#348efe;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0px;
+}
+
+.pricing-button:hover {
+  color: white;
+  background-color: #015ff9;
+}
+
+@media (min-width: 900px) {
+  .panel {
+    flex-direction: row;
+    margin: 30px 0px;
+  }
+
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 30px 50px;
+    padding-top: 60px;
+  }
+
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+
+  
+}
